@@ -8,32 +8,27 @@
 
 h1 {
 	font-size: 1.75em;
+	margin: 20px;
 	text-align: center;
 }
 
-p {
-}
-
 .row {
-	background-color: gray;
-	border: 1px solid red;
+	margin: 20px;
 }
 
-.row section {
-	padding: 10px;
-}
-
+/* container to hold section title and body */
 .section-content {
 	background-color: #FFFFD0;
 	border: 1px solid black;
+	margin: 10px;
 }
 
-.section-text {
+/* body content of section container */
+.section-body {
 	margin: 30px 10px 10px 10px;
-	background-color: gray;
-	border: 1px solid blue;
 }
 
+/* title of section container*/
 .section-title {
 	border: 1px solid black;
 	clear: left;
@@ -144,4 +139,8 @@ p {
 }
 
 @media (max-width: 767px) {
+	/* ensure that the section content remains wide enough to contain the section title */
+	.section-content {
+		min-width: 150px;
+	}
 }
